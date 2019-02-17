@@ -1,8 +1,8 @@
 {
-  "name": "hw61-konstr",
+  "name": "hw62-doc",
   "version": "1.0.0",
   "description": "Документирование",
-  "main": "index.js",
+  "main": "character.js",
   "directories": {
     "test": "test"
   },
@@ -17,13 +17,15 @@
     "webpack": "^4.29.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
     "jsdoc": "^3.5.5"
   },
   "scripts": {
+    "lint": "eslint .",
     "build": "webpack --mode production",
-    "test": "jest --coverage",
     "doc": "jsdoc -c jsdoc.conf.json",
-    "lint": "eslint ."
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",

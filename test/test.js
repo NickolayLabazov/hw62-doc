@@ -1,4 +1,4 @@
-import Character from '../src/function';
+import Character from '../src/character';
 
 test('Bowman', () => {
   const expected = {
